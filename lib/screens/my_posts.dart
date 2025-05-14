@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:iconsax/iconsax.dart';
 
 class MyPostsScreen extends StatelessWidget {
   const MyPostsScreen({super.key});
@@ -13,7 +14,7 @@ class MyPostsScreen extends StatelessWidget {
           toolbarHeight: 60,
           backgroundColor: Color.fromARGB(255, 17, 17, 251),
           title: Padding(
-            padding: const EdgeInsets.only(top: 20),
+            padding: const EdgeInsets.only(top: 8),
             child: Text(
               'My Posts',
               style: TextStyle(
@@ -55,7 +56,7 @@ class MyPostsScreen extends StatelessWidget {
                     indicatorSize: TabBarIndicatorSize.tab,
                     dividerColor: Colors.transparent,
                     indicator: BoxDecoration(
-                        color: Color.fromARGB(222, 17, 17, 251),
+                        color: Color.fromARGB(255, 2, 2, 225),
                         borderRadius: BorderRadius.circular(25)),
                     labelColor: Colors.white,
                     unselectedLabelColor: Colors.black,
@@ -82,13 +83,37 @@ class MyPostsScreen extends StatelessWidget {
                 ),
                 Center(
                   child: Text(
-                    'Recieve notifications about jobs added to Favourites',
+                    'You have not added a post to the app yet',
                     style: TextStyle(
                         color: Color.fromARGB(255, 21, 21, 21),
                         fontSize: 17,
                         fontWeight: FontWeight.w400),
                     textAlign: TextAlign.center,
                   ),
+                ),
+                SizedBox(height: 65),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.end,
+                  children: [
+                    Container(
+                      height: 55,
+                      width: 55,
+                      decoration: BoxDecoration(
+                          boxShadow: [
+                            BoxShadow(
+                                color: const Color.fromARGB(221, 59, 59, 59),
+                                blurRadius: 1)
+                          ],
+                          color: Color.fromARGB(222, 17, 17, 251),
+                          borderRadius: BorderRadius.circular(50)),
+                      child: Icon(
+                        weight: 27,
+                        size: 25,
+                        Iconsax.add,
+                        color: Colors.white,
+                      ),
+                    ),
+                  ],
                 )
               ]),
             ),

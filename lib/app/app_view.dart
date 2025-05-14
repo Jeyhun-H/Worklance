@@ -1,10 +1,11 @@
+import 'package:Worklance/screens/profile.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:get/get.dart';
-import 'package:worklance_app/screens/chat.dart';
-import 'package:worklance_app/screens/home.dart';
-import 'package:worklance_app/screens/my_posts.dart';
-import 'package:worklance_app/screens/profile.dart';
+import 'package:Worklance/screens/chat.dart';
+import 'package:Worklance/screens/home.dart';
+import 'package:Worklance/screens/my_posts.dart';
+
 
 void main() => runApp(AppView());
 

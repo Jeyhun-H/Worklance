@@ -13,7 +13,7 @@ class ProfileScreen extends StatelessWidget {
         toolbarHeight: 60,
         backgroundColor: Color.fromARGB(255, 17, 17, 251),
         title: Padding(
-          padding: const EdgeInsets.only(top: 20),
+          padding: const EdgeInsets.only(top: 8),
           child: Text(
             'My Profile',
             style: TextStyle(
@@ -121,8 +121,8 @@ class ProfileScreen extends StatelessWidget {
                       Row(
                         children: [
                           Icon(
-                            Icons.edit_outlined,
-                            size: 22,
+                            Iconsax.profile_circle,
+                            size: 23,
                           ),
                           SizedBox(width: 5),
                           Text(
@@ -157,7 +157,7 @@ class ProfileScreen extends StatelessWidget {
                         children: [
                           Icon(
                             CupertinoIcons.phone,
-                            size: 20,
+                            size: 22,
                           ),
                           SizedBox(width: 5),
                           Text(

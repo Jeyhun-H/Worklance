@@ -27,12 +27,12 @@ class _ChatScreenPage extends State<ChatScreenPage> {
         toolbarHeight: 60,
         backgroundColor: Color.fromARGB(255, 17, 17, 251),
         title: Padding(
-          padding: const EdgeInsets.only(top: 20),
+          padding: const EdgeInsets.only(top: 8),
           child: Text(
             'Chat',
             style: TextStyle(
                 fontWeight: FontWeight.w600,
-                fontSize: 28,
+                fontSize: 29,
                 color: Color.fromARGB(255, 255, 255, 255)),
           ),
         ),
@@ -368,14 +368,17 @@ class _ChatPageState extends State<ChatPage> {
               )
             : Text(
                 '$time',
-                style: TextStyle(color: Colors.grey.shade400),
+                style:
+                    TextStyle(color: const Color.fromARGB(255, 189, 189, 189)),
               ),
         Flexible(
           child: Container(
             margin: EdgeInsets.only(left: 10, right: 10, top: 20),
             padding: EdgeInsets.all(20),
             decoration: BoxDecoration(
-              color: chat == 0 ? Colors.indigo.shade100 : Colors.indigo.shade50,
+              color: chat == 0
+                  ? const Color.fromARGB(255, 197, 202, 233)
+                  : const Color.fromARGB(255, 232, 234, 246),
               borderRadius: chat == 0
                   ? BorderRadius.only(
                       topLeft: Radius.circular(30),
@@ -394,7 +397,8 @@ class _ChatPageState extends State<ChatPage> {
         chat == 1
             ? Text(
                 '$time',
-                style: TextStyle(color: Colors.grey.shade400),
+                style:
+                    TextStyle(color: const Color.fromARGB(255, 189, 189, 189)),
               )
             : SizedBox(),
       ],
@@ -416,11 +420,11 @@ class _ChatPageState extends State<ChatPage> {
                 decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(50),
                     color: Color.fromARGB(255, 17, 17, 251)),
-                padding: EdgeInsets.all(14),
-                child: Icon(
-                  Icons.send_rounded,
+                padding: EdgeInsets.all(7),
+                child: IconButton(
+                  onPressed: () {},
+                  icon: Icon(Icons.send_rounded, size: 28),
                   color: Colors.white,
-                  size: 28,
                 ),
               ),
               filled: true,

@@ -1,8 +1,10 @@
+import 'package:Worklance/app/app_view.dart';
+import 'package:Worklance/app/theme.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
-import 'package:worklance_app/app/app_view.dart';
-import 'package:worklance_app/app/theme.dart';
+
+
 
 void main() => runApp(LoginScreen());
 

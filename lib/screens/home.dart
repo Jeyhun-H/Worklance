@@ -53,7 +53,7 @@ class _HomeScreenState extends State<HomeScreen> {
     return Column(
       children: [
         Padding(
-          padding: const EdgeInsets.only(left: 30, right: 30),
+          padding: const EdgeInsets.only(left: 30, right: 20),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             crossAxisAlignment: CrossAxisAlignment.center,
@@ -65,12 +65,21 @@ class _HomeScreenState extends State<HomeScreen> {
                     fontSize: 22,
                     color: Colors.black),
               ),
-              Text(
-                'See all',
-                style: TextStyle(
-                    fontWeight: FontWeight.w400,
-                    fontSize: 15,
-                    color: Color.fromARGB(255, 17, 17, 251)),
+              Row(
+                children: [
+                  Text(
+                    'See all',
+                    style: TextStyle(
+                        fontWeight: FontWeight.w400,
+                        fontSize: 15,
+                        color: Color.fromARGB(255, 17, 17, 251)),
+                  ),
+                  Icon(
+                    size: 18,
+                    Iconsax.arrow_right_34,
+                    color: Color.fromARGB(255, 17, 17, 251),
+                  )
+                ],
               ),
             ],
           ),
@@ -94,7 +103,7 @@ class _HomeScreenState extends State<HomeScreen> {
         ),
         SizedBox(height: 20),
         Padding(
-          padding: const EdgeInsets.only(left: 30, right: 30),
+          padding: const EdgeInsets.only(left: 30, right: 20),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             crossAxisAlignment: CrossAxisAlignment.center,
@@ -106,12 +115,21 @@ class _HomeScreenState extends State<HomeScreen> {
                     fontSize: 22,
                     color: Colors.black),
               ),
-              Text(
-                'See all',
-                style: TextStyle(
-                    fontWeight: FontWeight.w400,
-                    fontSize: 15,
-                    color: Color.fromARGB(255, 17, 17, 251)),
+              Row(
+                children: [
+                  Text(
+                    'See all',
+                    style: TextStyle(
+                        fontWeight: FontWeight.w400,
+                        fontSize: 15,
+                        color: Color.fromARGB(255, 17, 17, 251)),
+                  ),
+                  Icon(
+                    size: 18,
+                    Iconsax.arrow_right_34,
+                    color: Color.fromARGB(255, 17, 17, 251),
+                  )
+                ],
               ),
             ],
           ),
@@ -286,21 +304,21 @@ class _HomeScreenState extends State<HomeScreen> {
       toolbarHeight: 70,
       backgroundColor: Color.fromARGB(255, 17, 17, 251),
       title: Padding(
-        padding: const EdgeInsets.only(top: 8),
+        padding: const EdgeInsets.only(top: 7),
         child: Row(
           children: [
             Image.asset(
               'assets/images/worklance_logo2.png',
-              width: 60,
-              height: 60,
+              width: 50,
+              height: 50,
             ),
-            SizedBox(width: 10),
+            SizedBox(width: 7),
             Text(
               'Worklance',
               style: TextStyle(
                   fontFamily: 'Ubuntu',
                   fontWeight: FontWeight.w700,
-                  fontSize: 34,
+                  fontSize: 32,
                   color: Color.fromARGB(255, 255, 255, 255)),
             ),
           ],
@@ -308,7 +326,7 @@ class _HomeScreenState extends State<HomeScreen> {
       ),
       actions: [
         Padding(
-          padding: const EdgeInsets.only(right: 20, top: 10),
+          padding: const EdgeInsets.only(right: 20, top: 7),
           child: Container(
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10),
@@ -823,7 +841,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     ),
                     SizedBox(width: 70),
                     Text(
-                      '8k-10k ',
+                      '8k-10k',
                       style: TextStyle(
                           fontSize: 20,
                           fontWeight: FontWeight.w600,
@@ -1539,14 +1557,14 @@ class _HomeScreenState extends State<HomeScreen> {
                             CircleAvatar(
                               radius: 15,
                               backgroundImage:
-                                  AssetImage('assets/images/avatar3.jpg'),
+                                  AssetImage('assets/images/avatar7.jpg'),
                             ),
                             Positioned(
                               left: 18,
                               child: CircleAvatar(
                                 radius: 15,
                                 backgroundImage:
-                                    AssetImage('assets/images/avatar6.jpg'),
+                                    AssetImage('assets/images/avatar4.jpg'),
                               ),
                             ),
                             Positioned(
@@ -1554,7 +1572,7 @@ class _HomeScreenState extends State<HomeScreen> {
                               child: CircleAvatar(
                                 radius: 15,
                                 backgroundImage:
-                                    AssetImage('assets/images/avatar3.jpg'),
+                                    AssetImage('assets/images/avatar8.jpg'),
                               ),
                             ),
                             Positioned(
@@ -1562,7 +1580,7 @@ class _HomeScreenState extends State<HomeScreen> {
                               child: CircleAvatar(
                                 radius: 15,
                                 backgroundImage:
-                                    AssetImage('assets/images/avatar3.jpg'),
+                                    AssetImage('assets/images/avatar10.jpg'),
                               ),
                             ),
                             Positioned(
@@ -1605,7 +1623,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 Row(
                   children: [
                     Text(
-                      '12k - 17K',
+                      '12k - 17k',
                       style: TextStyle(
                           fontSize: 20,
                           fontWeight: FontWeight.w600,

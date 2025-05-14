@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:worklance_app/app/splash.dart';
-import 'package:worklance_app/app/theme.dart';
+import 'package:Worklance/app/splash.dart';
+import 'package:Worklance/app/theme.dart';
 
 void main() => runApp(WorklanceApp());
 
